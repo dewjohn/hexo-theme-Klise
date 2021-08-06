@@ -1,1 +1,1 @@
-# hexo-theme-Klis-
+# hexo-theme-Klise
