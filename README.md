@@ -23,3 +23,12 @@ Set theme in the hexo work folder's root config file `_config.yml`
 theme: Klise
 ```
 
+
+## 🚧 Under Construction
+
+
+
+
+## License
+
+[Apache](https://github.com/dewjohn/hexo-theme-Klise/blob/main/LICENSE) License
