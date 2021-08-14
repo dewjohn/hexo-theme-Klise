@@ -1,0 +1,25 @@
+<% if (theme.comments.button && page.comment && theme.waline.serverURL){ %>
+    <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+    <div id="waline"></div>
+    <script>
+        window.onload = function () {
+            var loadWaline = function () {
+                new Waline({
+                el: '#waline',
+                path: location.pathname,
+                avatarCDN: '<%=theme.waline.avatarCDN%>',
+                serverURL: '<%=theme.waline.serverURL %>',
+                avatar: '<%=theme.waline.avatar%>',
+                placeholder: "<%= theme.waline.placeholder %>"
+            });
+            }
+            if (<%- theme.comments.button %>) {
+                document.getElementById("comments-btn").onclick=function(){
+                    document.getElementById("comments-btn").style.display="none";
+                    loadWaline();
+		    }} else {
+            loadWaline();
+            }
+        };
+    </script>
+<% } %>

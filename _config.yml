@@ -1,0 +1,54 @@
+
+# favicon
+favicon: /img/favicon.ico
+
+# rss
+rss: /atom.xml
+
+# main menu navigation
+menu:
+  Home: / || Home
+  About: /about/ || About
+  Archives: /archives/ || Archives
+  Tags: /tags/ || Tags
+
+bio:
+  I just want something simpler...
+
+page_404:
+  enable: true
+  subtitle: 'Oops! Page not found.'
+
+comments:
+  enable: true
+  type: waline # waline | valine 
+  button: true
+
+#Waline https://waline.js.org
+waline:
+  serverURL: # your waline serverURLs
+  avatarCDN: # default is https://sdn.geekzu.org/avatar/
+  avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
+  placeholder: 'Let me know what you think！'
+
+valine:
+  appid: # leancloud application app id
+  appkey: # leancloud application app key
+  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+  verify: false # Verification code
+  placeholder: Just go go # comment box placeholder
+  avatar: mm # gravatar style
+  guest_info: nick,mail,link # custom comment header
+  pageSize: 10 # pagination size
+  recordIP: false # record IP
+  serverURLs: # your serverURLs
+  emojiCDN: # emoji CDN
+  enableQQ: true
+
+# stylesheets loaded in the <head>
+stylesheets:
+- /css/main.css
+
+# scripts loaded in the end of the body
+scripts:
+- /js/main.js

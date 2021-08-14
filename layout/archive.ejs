@@ -1,0 +1,29 @@
+
+<%
+const categoriesList = list_categories({ show_count: false });
+const tagsList = list_tags({ show_count: false });
+const archivesList = list_archives({ show_count: false });
+%>
+
+  <div class="wrapper">
+    <main class="page-content">
+    <header class="header">
+      <h1 class="header-title center">Archives</h1>
+    </header>
+      <% var last_year = ''; %>
+      <% page.posts.each(function (article) { %>
+        <% var cur_year = article.date.year(); %>
+        <% if(last_year !== cur_year){ %>
+        <h2 class="list-year"><%- cur_year %><svg xml="<%- getAnimalIcon(cur_year) %>" class="icon"></svg></h2>
+        <% last_year = cur_year; } %>
+        <article class="post-item">
+          <h3 class="post-item-title">
+            <a href="<%=url_for(article.path)%>">
+              <%=article.title%>
+            </a>
+          </h3>
+        </article>
+      <% }) %>
+    </main>
+  </div>
+

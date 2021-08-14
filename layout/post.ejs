@@ -1,0 +1,23 @@
+
+<div class="wrapper post">
+  <main class="page-content" aria-label="Content">
+      <header class="header">
+        <% if(page.tags.length > 0){ %>
+          <div class="tags">
+            <% (page.tags || []).forEach(function(item) { %><a href="<%= url_for(item.path) %>" class="tag"># <%= item.name %></a><% }); %>
+          </div>
+        <% } %>
+        <h1 class="header-title" itemprop="headline"><%=page.title%></h1>
+          <div class="post-meta">
+            <time><%- date(page.date, 'MMM DD, YYYY') %></time>
+            <span itemprop="author">
+              <span itemprop="name"><%=config.author%></span>
+            </span>
+          </div>
+        </header>
+
+          <div class="page-content"><%-page.content%></div>
+          <%-partial('partials/pagination')%>
+
+   </main>
+</div>

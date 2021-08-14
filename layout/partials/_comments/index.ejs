@@ -1,0 +1,6 @@
+<div class="dis">
+    <% if (theme.comments.button && page.comment) { %>
+        <div class="btn" id="comments-btn">给我留言</div>
+      <% } %>
+     <%- partial('partials/_comments/' + theme.comments.type) %>
+  </div>

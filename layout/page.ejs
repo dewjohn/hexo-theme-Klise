@@ -1,0 +1,12 @@
+
+<div class="wrapper">
+  <header class="header">
+    <h1 class="header-title center"><%=page.title%></h1>
+  </header>
+  <main class="page-content" aria-label="Content">
+      <div class="post">
+        <%-page.content%>
+       </div>
+         <%- partial('partials/_comments/index') %>
+  </main>
+</div>
