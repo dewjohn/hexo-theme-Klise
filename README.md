@@ -11,8 +11,10 @@ Demo Site: [dewjohn.github.io](https://dewjohn.github.io/) || [john.pages.dev](h
 Git
 
 ```
-git clone https://github.com/dewjohn/hexo-theme-Klise.git themes Klise
+git clone https://github.com/dewjohn/hexo-theme-Klise.git themes/Klise
 ```
+
+
 
 
 ## ⚙ Configuration
