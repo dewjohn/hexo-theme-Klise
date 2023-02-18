@@ -15,7 +15,13 @@ git clone https://github.com/dewjohn/hexo-theme-Klise.git themes/Klise
 ```
 
 
+scss
 
+```
+npm install hexo-renderer-scss 
+```
+
+⚠️ this package only support under node@14（maybe under），Node16+ is not supported
 
 ## ⚙ Configuration
 
